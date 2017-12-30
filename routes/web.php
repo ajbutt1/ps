@@ -17,16 +17,17 @@ Route::post('auth/login','Auth\LoginController@login');
 Route::get('auth/logout','Auth\LoginController@logout');
 Route::get('auth/register','Auth\RegisterController@showRegistrationForm');
 Route::post('auth/register','Auth\RegisterController@register');
+
 //password reset routes
 /*Route::get('password/reset/{token?}','Auth\ResetPasswordController@showResetForm');
 Route::post('password/reset','Auth\ResetPasswordController@reset');
 Route::get('password/email','Auth\ForgotPasswordController@showLinkRequestForm');
 Route::post('password/email','Auth\ResetPasswordController@sendResetLinkEmail');*/
 
+//Crawler
+Route::get('/crawler','CrawlerController@show');
 
-
-
-
+//account
 Route::get('/createAccount', function () {
     return view('createAccount');
 });
