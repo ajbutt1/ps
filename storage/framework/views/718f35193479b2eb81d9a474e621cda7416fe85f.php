@@ -8,9 +8,8 @@
 </head>
 <body>
 
-    <?php $__currentLoopData = $data; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $d): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-        <li><?php echo e($d->html()); ?></li>
-    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+	<?php echo e(dd($data)); ?>
+
     
 </body>
 </html>

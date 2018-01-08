@@ -8,9 +8,7 @@
 </head>
 <body>
 
-    @foreach ($data as $d)
-        <li>{{ $d->html() }}</li>
-    @endforeach
+	{{ dd($data)}}
     
 </body>
 </html>
